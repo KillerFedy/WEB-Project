@@ -18,7 +18,6 @@ def get_products():
             lines = f.read().split('\n')
         product = {"name": lines[0], "description": lines[1]}
         products.append(product)
-    print(products)
     return products
 
 
@@ -26,4 +25,4 @@ def get_products():
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template('index.html', title = "Мой блог", products = get_products())
+    return render_template('index.html', title = "Магазин Шаурмы", products = get_products())
