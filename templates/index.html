@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>{{title}} - Microblog</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        {% for product in products %}
+            <div class="product_block">
+                <article>
+                    <div class="name">{{product.name}}</div>
+                    <div class="description">{{product.description}}</div>
+                </article>
+            </div>
+        {% endfor %}
+    </body>
+</html>
