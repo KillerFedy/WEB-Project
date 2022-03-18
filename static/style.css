@@ -51,6 +51,8 @@ html {
 }
 
 .product_block {
+    height: 10rem;
+    max-height: 10rem;
     background-color: #feeff4;
     border-left: 0.6rem solid #e04386;
     color: #49152c;
