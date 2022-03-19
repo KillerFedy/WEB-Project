@@ -1,9 +1,12 @@
 <html>
     <head>
         <title>{{title}} - Shop</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ url_for('static', filename='normalize.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-        <script src= url_for('static', filename='script.css')></script>
+        <script src= "{{url_for('static', filename='script.js')}}"></script>
     </head>
     <body>
         <header class = "header-wrapper">
@@ -22,14 +25,35 @@
         </header>
 
         <main>
-            {% for product in products %}
-                <div class="product_block">
-                    <article>
-                        <div class="name">{{product.name}}</div>
-                        <div class="description">{{product.description}}</div>
-                    </article>
+
+            <div class="home-page-wrapper">
+                <div class="home-page-menu">
+                    {% for category in categories %}
+                        <div class="menu-root">
+                            <img src = "" alt = "#">
+                            <div class = "menu-info">
+                                <a href="#">{{ category.name }}</a>
+                                <div class = "menu-subinfo">
+                                    <a href="#">{{ category.description }}</a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
                 </div>
-            {% endfor %}
+
+                <div class="home-page-center">
+                    {% for product in products %}
+                        <div class="product_block">
+                            <article>
+                                <div class="name">{{product.name}}</div>
+                                <div class="description">{{product.description}}</div>
+                            </article>
+                        </div>
+                    {% endfor %}
+                </div>
+
+            </div>
+            
         </main>
     </body>
 </html>

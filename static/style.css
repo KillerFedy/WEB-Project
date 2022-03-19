@@ -50,17 +50,62 @@ html {
     margin-right: 2.5rem;
 }
 
+.home-page-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.3rem;
+}
+
+.home-page-menu {
+    width: 22rem;
+}
+
+.menu-root {
+    display: flex;
+    background-color: #ffe7ef50;
+    border: 0.1rem solid gray;
+    margin-top: 0.2rem;
+    box-shadow: .1rem 0.05rem 0.35rem rgb(83, 82, 82);
+    max-height: 6.5rem;
+    padding: 0.6rem 1.6rem;
+}
+
+.menu-root img {
+    margin-right: 1rem;
+}
+
+.menu-info{
+    font-family: "Fredoka", sans-serif;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+}
+
+.menu-info a{
+    text-decoration: none;
+    color: rgb(39, 37, 37);
+}
+
+.menu-subinfo{
+    display: block;
+    margin-top: .5rem;
+    font-size: 1rem;
+}
+
+.home-page-center{
+    
+    max-width: calc(100% - 22rem);
+}
+
 .product_block {
     height: 10rem;
     max-height: 10rem;
     background-color: #feeff4;
     border-left: 0.6rem solid #e04386;
+    box-shadow: -0.23rem -0.25rem 0.3rem rgb(83, 82, 82);
     color: #49152c;
     padding: 3rem 5rem;
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
-    margin: 1rem;
     overflow: hidden;
-    margin-left: 17rem;
-    margin-right: 17rem;
+    margin: 0 1rem 1rem 1rem;
 }
