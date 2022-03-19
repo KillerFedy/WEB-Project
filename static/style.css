@@ -58,14 +58,15 @@ html {
 
 .home-page-menu {
     width: 22rem;
+    background-color: #ffe7ef50;
+    box-shadow: .1rem 0.05rem 0.35rem rgb(83, 82, 82);
+    height: 35.5rem;
+    border-radius: 2%;
 }
 
 .menu-root {
     display: flex;
-    background-color: #ffe7ef50;
-    border: 0.1rem solid gray;
     margin-top: 0.2rem;
-    box-shadow: .1rem 0.05rem 0.35rem rgb(83, 82, 82);
     max-height: 6.5rem;
     padding: 0.6rem 1.6rem;
 }
