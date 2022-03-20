@@ -19,7 +19,7 @@
                 </div>
 
                 <nav class="header-menu">
-                    <a href="#"><img src="{{ url_for('static', filename='shop-basket.png')}}" alt="Shop-Basket"></a>
+                    <a href="#"><img src="{{ url_for('static', filename='shop-basket.png')}}" alt="Shop Basket"></a>
                     <a href="#"><img src="{{ url_for('static', filename='user-profile.png')}}" alt="Profile"></a>
                 </nav>
         </header>
@@ -30,7 +30,7 @@
                 <div class="home-page-menu">
                     {% for category in categories %}
                         <div class="menu-root">
-                            <img src = "" alt = "#">
+                            <img src="{{ url_for('static', filename=category.img )}}" alt="#">
                             <div class = "menu-info">
                                 <a href="#">{{ category.name }}</a>
                                 <div class = "menu-subinfo">
