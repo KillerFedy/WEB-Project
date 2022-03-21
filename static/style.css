@@ -101,7 +101,7 @@ html {
 
 .product_block {
     height: 10rem;
-    max-height: 10rem;
+    max-height: 40rem;
     background-color: #feeff4;
     border-left: 0.6rem solid #e04386;
     box-shadow: -0.23rem -0.25rem 0.3rem rgb(83, 82, 82);

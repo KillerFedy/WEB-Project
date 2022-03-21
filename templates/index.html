@@ -43,8 +43,9 @@
 
                 <div class="home-page-center">
                     {% for product in products %}
-                        <div class="product_block">
+                        <div class="product_block" id="{{product.id}}">
                             <article>
+                                <button onclick="heigth_plus('{{product.id}}')">Подробнее</button>
                                 <div class="name">{{product.name}}</div>
                                 <div class="description">{{product.description}}</div>
                             </article>

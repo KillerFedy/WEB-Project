@@ -20,7 +20,7 @@ def get_products():
     for file in POSTS_DIR.iterdir():
         with open(file, 'rt', encoding="utf-8") as f:
             lines = f.read().split('\n')
-        product = {"name": lines[0], "description": lines[1]}
+        product = {"name": lines[0], "description": lines[1], "id": int(lines[2])}
         products.append(product)
     return products
 
