@@ -3,7 +3,7 @@ function heigth_plus(id)
 	 {
 	 var container=document.getElementById(id);
 	 //alert(document.body.clientHeight)
-	 container.style.height= idValues[Number(id)]+"px"
+	 container.style.maxHeight= idValues[Number(id)]+"px"
 	 }
 
 
