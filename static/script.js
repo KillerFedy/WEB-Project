@@ -1,13 +1,18 @@
-let idValues = [400, 400, 400, 400, 400, 400, 400]
-function heigth_plus(id)
+var defoultHeightProductBlock = 10
+let idValues = [40, 40, 40, 40, 40, 40, 40]
+function change_height(id)
 	 {
 	 var container=document.getElementById(id);
-	 //alert(document.body.clientHeight)
-	 container.style.maxHeight= idValues[Number(id)]+"px"
+	 var button = document.getElementById("button"+id);
+	 //alert(container.style.maxHeight)
+	 if(container.style.maxHeight === (defoultHeightProductBlock+"rem"))
+	 {
+		button.innerText = "Скрыть";
+		container.style.maxHeight= idValues[Number(id)]+"rem"
 	 }
-
-
-function heigth()
-{
-    alert("Привет");
-}
+	 else
+	 {
+		button.innerText = "Подробнее";
+		container.style.maxHeight = defoultHeightProductBlock+"rem"
+	 }
+	 }
