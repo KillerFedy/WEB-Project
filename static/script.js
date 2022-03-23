@@ -5,7 +5,7 @@ function change_height(id)
 	 var container=document.getElementById(id);
 	 var button = document.getElementById("button"+id);
 	 //alert(container.style.maxHeight)
-	 if(container.style.maxHeight === (defoultHeightProductBlock+"rem"))
+	 if((container.style.maxHeight === (defoultHeightProductBlock+"rem")) || (container.style.maxHeight === ""))
 	 {
 		button.innerText = "Скрыть";
 		container.style.maxHeight= idValues[Number(id)]+"rem"
