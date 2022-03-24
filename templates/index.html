@@ -45,16 +45,14 @@
                     {% for product in products %}
                         <div class="product_block" id="{{product.id}}">
                             <article>
-                                <button onclick="change_height('{{product.id}}')" id="button{{product.id}}">Подробнее</button>
+                                <button class="product_description_button" onclick="change_height('{{product.id}}')" id="button{{product.id}}">Подробнее</button>
                                 <div class="name">{{product.name}}</div>
                                 <div class="description">{{product.description}}</div>
                             </article>
                         </div>
                     {% endfor %}
                 </div>
-
             </div>
-            
         </main>
 
         <script src= "{{url_for('static', filename='script.js')}}"></script>

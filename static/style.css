@@ -100,6 +100,7 @@ html {
 }
 
 .product_block {
+    position: relative;
     max-height: 10rem;
     background-color: #feeff4;
     border-left: 0.6rem solid #e04386;
@@ -110,4 +111,12 @@ html {
     font-size: 1.6rem;
     overflow: hidden;
     margin: 0 1rem 1rem 1rem;
+}
+
+.product_description_button{
+    position:absolute;
+	bottom:0;
+    right: 0;
+
+
 }
