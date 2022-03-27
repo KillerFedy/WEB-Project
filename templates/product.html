@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='normalize.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='product.css') }}">
+    
+    <title>{{title}} - FedRash</title>
+</head>
+<body>
+
+    <header class = "header-wrapper">
+        <div class="header-logo">
+            <img src="{{ url_for('static', filename='shaurma-god.jpg') }}" alt="SHAURMA GOD">
+            <div class="header-text">
+                <h1>Онлайн-магазин шаурмы</h1>
+                <h3>Cочно! Быстро! Дёшево!</h3>
+            </div>
+        </div>
+
+        <nav class="header-menu">
+            <a href="#"><img src="{{ url_for('static', filename='shop-basket.png')}}" alt="Shop Basket"></a>
+            <a href="#"><img src="{{ url_for('static', filename='user-profile.png')}}" alt="Profile"></a>
+        </nav>
+    </header>
+
+
+    <main>
+        
+        <div class = "title-product">
+            <div class = "title-image">
+                <img src="{{ url_for('static', filename='shaurma-title.jpg')}}" alt = "PRODUCT">
+            </div>
+    
+            <div class = "title-info">
+                <h1>Шаурма куриная</h1>
+                <div class = "title-price">
+                    <div class="price">250 рублей</div>
+                    <button class="buy-button">В корзину</button>
+                </div>
+
+                <div class = "title-description">
+                    <h2>
+                        ОПИСАНИЕ
+                    </h2>
+                </div>
+    
+                <div class = "description">
+                    <h4>
+                        Нежная куриная грудка с большим количеством овощей. Добавление соуса по вашему вкусу. 
+                    </h4>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    
+</body>
+</html>

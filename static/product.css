@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins&family=Rubik:wght@500&display=swap');
+
+.title-product{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-image img{
+    margin-left: 23.5rem;
+    width: 33rem;
+    height: 29rem;
+    border: 0.1rem solid rgba(145, 143, 143, 0.664);
+    border-radius: 10%;
+    box-shadow: 0 0 0.6rem rgba(43, 42, 42, 0.842);
+}
+
+.title-info {
+    text-align: center;
+    margin-right: 7.5rem;
+}
+
+.title-info h1 {
+    font-size: 4.6rem;
+    font-family: "Rubik", sans-serif;
+}
+
+.title-price {
+    display: flex;
+    justify-content:space-evenly;
+    font-size: 1.6rem;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.price {
+    background-color: black;
+    padding: 1.5rem;
+    border-radius: 10%;
+    color: #ffffff;
+    text-align: center;
+}
+
+.buy-button {
+    color: #ffffff;
+    background-color: rgba(230, 20, 20, 0.966);
+    border-radius: 10%;
+    border: unset;
+    cursor: pointer;
+    padding: 1.5rem;
+}
+
+.title-description {
+    margin-top: 8rem;
+}
+
+.title-description h2{
+    color: rgba(128, 128, 128, 0.712);
+    border-bottom: 0.1rem solid #acacac8e;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3.5rem;
+    font-family:"Poppins", sans-serif;
+}
+
+.description h4{
+    font-size: 1.65rem;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: unset; 
+}

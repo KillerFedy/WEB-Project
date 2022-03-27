@@ -1,4 +1,5 @@
 from importlib.resources import path
+from turtle import title
 from unicodedata import category
 from flask import Flask, render_template
 from pathlib import Path
@@ -37,5 +38,8 @@ def get_category():
 
 @app.route('/')
 @app.route('/index')
-def index():
-    return render_template('index.html', title = "Магазин Шаурмы", products = get_products(), categories = get_category())
+#def index():
+#    return render_template('index.html', title = "Магазин Шаурмы", products = get_products(), categories = get_category())
+
+def product():
+    return render_template('product.html', title = "Шаурма куриная")
