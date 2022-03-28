@@ -41,6 +41,7 @@
 
                 <div class="home-page-center">
                     {% for product in products %}
+                    <a href="http://127.0.0.1:5000/product">
                         <div class="product_block" id="{{product.id}}">
                             <article>
                                 <button class="product_description_button" onclick="change_height('{{product.id}}')" id="button{{product.id}}">Подробнее</button>
@@ -48,6 +49,7 @@
                                 <div class="description">{{product.description}}</div>
                             </article>
                         </div>
+                    </a>
                     {% endfor %}
                 </div>
             </div>
