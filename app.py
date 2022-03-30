@@ -21,7 +21,7 @@ def get_products():
     for file in POSTS_DIR.iterdir():
         with open(file, 'rt', encoding="utf-8") as f:
             lines = f.read().split('\n')
-        product = {"name": lines[0], "description": lines[1], "id": int(lines[2])}
+        product = {"name": lines[0], "description": lines[1], "id": int(lines[2]), 'browserName': lines[3]}
         products.append(product)
     return products
 
@@ -42,6 +42,10 @@ def index():
     return render_template('index.html', title = "Магазин Шаурмы", products = get_products(), categories = get_category())
 
 
-@app.route('/product')
-def product():
-   return render_template('product.html', title = "Шаурма куриная")
+@app.get('/<browsername>')
+def productPage(browsername):
+    products = get_products()
+    for product in products:
+        if browsername == product["browserName"]:
+            return render_template('product.html', title = product["name"])
+    return 404, "Not Found"
