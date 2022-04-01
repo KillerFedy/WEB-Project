@@ -95,8 +95,11 @@ html {
 }
 
 .home-page-center{
-    
     max-width: calc(100% - 22rem);
+}
+
+.home-page-center a{
+    text-decoration: none;
 }
 
 .product_block {
@@ -117,6 +120,4 @@ html {
     position:absolute;
 	bottom:0;
     right: 0;
-
-
 }

@@ -36,10 +36,10 @@
             </div>
     
             <div class = "title-info">
-                <h1>{{title}}</h1>
+                <h1>{{product.name}}</h1>
                 
                 <div class = "title-price">
-                    <div class="price">250 рублей</div>
+                    <div class="price">{{product.cost}} рублей</div>
                     <button class="buy-button">В корзину</button>
                 </div>
 
@@ -51,7 +51,7 @@
     
                 <div class = "description">
                     <h4>
-                        Нежная куриная грудка с большим количеством овощей. Добавление соуса по вашему вкусу. 
+                        {{product.description}} 
                     </h4>
                 </div>
             </div>

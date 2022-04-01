@@ -21,7 +21,7 @@ def get_products():
     for file in POSTS_DIR.iterdir():
         with open(file, 'rt', encoding="utf-8") as f:
             lines = f.read().split('\n')
-        product = {"name": lines[0], "description": lines[1], "id": int(lines[2]), 'browserName': lines[3]}
+        product = {"id": int(lines[0]), "name": lines[1], "description": lines[2],  'browserName': lines[3], 'cost': lines[4]}
         products.append(product)
     return products
 
@@ -47,5 +47,5 @@ def productPage(browsername):
     products = get_products()
     for product in products:
         if browsername == product["browserName"]:
-            return render_template('product.html', title = product["name"])
+            return render_template('product.html', product = product)
     return 404, "Not Found"
