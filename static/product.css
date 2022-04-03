@@ -3,12 +3,12 @@
 .title-product{
     margin-top: 5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 .title-image img{
-    margin-left: 23.5rem;
+    margin-left: 20rem;
     width: 33rem;
     height: 29rem;
     border: 0.1rem solid rgba(145, 143, 143, 0.664);
@@ -18,7 +18,7 @@
 
 .title-info {
     text-align: center;
-    margin-right: 7.5rem;
+    margin-left: 20rem;
 }
 
 .title-info h1 {
@@ -65,6 +65,9 @@
 }
 
 .description h4{
+
+    overflow: hidden;
+    max-height: 2rem;
     font-size: 1.65rem;
     font-family: "Noto Sans", sans-serif;
     font-weight: unset; 
