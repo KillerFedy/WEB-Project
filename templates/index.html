@@ -41,15 +41,17 @@
 
                 <div class="home-page-center">
                     {% for product in products %}
-                    <a href="{{ url_for('productPage', browsername = product.browserName )}}">
-                        <div class="product_block" id="{{product.id}}">
-                            <article>
-                                <button class="product_description_button" onclick="change_height('{{product.id}}')" id="button{{product.id}}">Подробнее</button>
-                                <div class="name">{{product.name}}</div>
-                                <div class="description">{{product.description}}</div>
-                            </article>
+                        <div class="product-block">
+                            <div class="product-block-image">
+                                <a href="{{url_for('productPage', browsername = product.browserName)}}"><img src="{{ url_for('static', filename='shaurma-title.jpg')}}" alt="PRODUCT"></a>
+                            </div>
+                            <div class="product-block-name">
+                                {{ product.name }}
+                                <div class="product-block-cost">
+                                    {{ product.cost }}
+                                </div>
+                            </div>
                         </div>
-                    </a>
                     {% endfor %}
                 </div>
             </div>
