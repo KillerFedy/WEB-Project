@@ -1,4 +1,4 @@
-var defoultHeightProductBlock = 10
+var defoultHeightProductBlock = 11.5
 let idValues = [40, 40, 40, 40, 40, 40, 40]
 function change_height(id)
 	 {

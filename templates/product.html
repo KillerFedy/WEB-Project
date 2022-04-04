@@ -50,14 +50,15 @@
                 </div>
     
                 <div class = "description">
-                    <h4>
+                    <h4 id="{{product.id}}">
                         {{product.description}} 
                     </h4>
+                    <button class="product_description_button" onclick="change_height('{{product.id}}')" id="button{{product.id}}">Подробнее</button>
                 </div>
             </div>
         </div>
         
     </main>
-    
+    <script src= "{{url_for('static', filename='script.js')}}"></script>
 </body>
 </html>

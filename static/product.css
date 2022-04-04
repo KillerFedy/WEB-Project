@@ -65,9 +65,8 @@
 }
 
 .description h4{
-
     overflow: hidden;
-    max-height: 2rem;
+    max-height: 11.5rem;
     font-size: 1.65rem;
     font-family: "Noto Sans", sans-serif;
     font-weight: unset; 
